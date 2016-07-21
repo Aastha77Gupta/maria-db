@@ -19,3 +19,6 @@ default['mariadb']['connect_timeout']               = '5'
 
 #innoDB
 default['mariadb']['innodb']['buffer_pool_size']    = '1G'
+
+# MariaDB / Galera Cluster Settings
+wsrep_provider_options          = "socket.checksum=1"
